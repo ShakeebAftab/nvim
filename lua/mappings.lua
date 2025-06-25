@@ -29,6 +29,3 @@ map("n", "<leader>fg", "<cmd> Telescope live_grep <cr>", { desc = "Telescope: Li
 map("v", ">", ">gv", { desc = "Increase indent (keep selection)" })
 map("v", "<", "<gv", { desc = "Decrease indent (keep selection)" })
 map("v", "c", "")
-
--- Auto Complete
-map('i', '<A-Space>', '<Cmd>lua require("cmp").complete()<CR>', { noremap = true, silent = true })

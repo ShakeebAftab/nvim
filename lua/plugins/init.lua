@@ -21,7 +21,7 @@ return {
     opts = {
       ensure_installed = {
         "vim", "lua", "vimdoc",
-        "html", "css", "typescript"
+        "html", "css", "typescript",
       },
     },
   },
@@ -54,4 +54,21 @@ return {
       require("copilot_cmp").setup()
     end,
   },
+
+  {
+    "luckasRanarison/tailwind-tools.nvim",
+    name = "tailwind-tools",
+    ft = { "html", "javascriptreact", "typescriptreact", "svelte", "vue", "jsx", "tsx" },
+    build = ":UpdateRemotePlugins",
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+      "nvim-telescope/telescope.nvim", -- optional
+      "neovim/nvim-lspconfig",         -- optional
+    },
+    opts = {}                          -- your configuration
+  }
+
+
+
+
 }

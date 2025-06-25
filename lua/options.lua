@@ -11,8 +11,8 @@ require "nvchad.options"
 vim.opt.clipboard = ""
 
 -- Copy operations
-vim.api.nvim_set_keymap('n', 'cc', '"+yy', { noremap = true, silent = true }) -- Copy current line
-vim.api.nvim_set_keymap('v', 'cy', '"+y', { noremap = true, silent = true })  -- Copy selection in visual mode
+vim.api.nvim_set_keymap('n', '<leader>y', '"+yy', { noremap = true, silent = true }) -- Copy current line
+vim.api.nvim_set_keymap('v', '<leader>y', '"+yy', { noremap = true, silent = true }) -- Copy selection in visual mode
 
 -- Paste operations (consider using different mappings than <C-v>)
 -- <C-v> is normally used for visual block mode in Vim, so overriding it might be confusing
