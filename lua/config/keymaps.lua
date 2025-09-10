@@ -38,10 +38,3 @@ vim.api.nvim_create_autocmd("LspAttach", {
     end, opts)
   end,
 })
-
-
-vim.keymap.set("i", "<C>l", function()
-  require("blink.cmp").show()
-end, { silent = true, desc = "Show completion menu" })
-
-
